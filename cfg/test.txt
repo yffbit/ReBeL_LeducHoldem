@@ -1,0 +1,77 @@
+# set_pot 2
+set_thread_num 6
+set_accuracy 0.01
+set_max_iteration 2000
+set_print_interval 10
+set_log_file log/train.txt
+build_tree
+set_cfr_param 0,0,0
+# set_monte_carlo none
+start_solve
+
+# set_max_iteration 20000
+# build_tree
+# set_cfr_param 0,0,0
+# set_monte_carlo es
+# start_solve
+# 
+# build_tree
+# set_cfr_param 0,1,0
+# set_monte_carlo es
+# start_solve
+# 
+# build_tree
+# set_cfr_param 1,0,0
+# set_monte_carlo es
+# start_solve
+# 
+# build_tree
+# set_cfr_param 1,1,0
+# set_monte_carlo es
+# start_solve
+
+# build_tree
+# set_cfr_param 1,1,0
+# set_monte_carlo es
+# start_solve
+# 
+# build_tree
+# set_cfr_param 0,0,0
+# set_monte_carlo os
+# start_solve
+
+# build_tree
+# set_cfr_param 0,1,0
+# start_solve
+
+# build_tree
+# set_cfr_param 1,0,0
+# start_solve
+
+# build_tree
+# set_cfr_param 1,1,0
+# start_solve
+
+build_tree
+set_cfr_param 0,0,1
+start_solve
+
+build_tree
+set_cfr_param 0,1,1
+start_solve
+
+build_tree
+set_cfr_param 1,0,1
+start_solve
+
+build_tree
+set_cfr_param 1,1,1
+start_solve
+
+build_tree
+set_cfr_param 1.5,0,2,0
+start_solve
+
+build_tree
+set_cfr_param 1.5,0,2,1
+start_solve
